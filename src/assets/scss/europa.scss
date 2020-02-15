@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Monoton|Merriweather|Indie+Flower|Kalam&display=swap');
 @import 'libs/breakpoints';
+@import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap');
 
 @include breakpoints(
   (
@@ -77,10 +78,13 @@
   }
 }
 
+#content-wrapper {
+  margin-top: 5em;
+}
+
 .row-container {
   padding: 1em;
-  min-height: 300px;
-  height: 50vh;
+  height: 10vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -107,7 +111,9 @@
 
 .singleContainer {
   &:hover {
-    transform: rotate(random(20)-10deg) translateY(random(40)-20px) scale(1.1) !important;
+    transform: scale(1.1) !important;
+    position: relative;
+    z-index: 5;
   }
 }
 
@@ -126,6 +132,12 @@
   margin-top: 1vw;
   height: 12vw;
   width: 15vw;
+}
+
+@media screen and (min-width: 1351px) {
+  #wrapper-europe {
+    margin-bottom: 150px;
+  }
 }
 
 @media screen and (max-width: 1680px) {

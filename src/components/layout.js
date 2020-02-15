@@ -50,7 +50,6 @@ const Layout = ({ children, ...props }) => {
                 siteTitle={data.site.siteMetadata.title}
               />
               {children}
-              <Footer />
             </div>
           </div>
         </React.Fragment>

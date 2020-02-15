@@ -2,7 +2,7 @@ import React from 'react'
 import pic01 from '../assets/images/pic01.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 
-const Banner = props => (
+const Banner = () => (
   <section id="banner">
     <div className="content">
       <header>
@@ -22,11 +22,11 @@ const Banner = props => (
       className="goto-next"
       activeClass="active"
       smooth={true}
-      offset={50}
+      offset={0}
       duration={1500}
       spy={true}
     >
-      Next
+      {'Next'}
     </ScrollLink>
   </section>
 )

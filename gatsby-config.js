@@ -1,9 +1,9 @@
 module.exports = {
   //pathPrefix: `/mygatsby`,
   siteMetadata: {
-    title: 'Landed',
-    author: 'vasrush',
-    description: 'A Gatsby.js V2 Starter based on Landed by HTML5 UP',
+    title: 'Podróże Przez Świat',
+    author: 'Tomek D.',
+    description: 'Blog podróże przez świat',
     menuLinks: [
       {
         name: 'Home',
@@ -14,16 +14,28 @@ module.exports = {
         link: '#',
         items: [
           {
-            name: 'Left Sidebar',
+            name: 'Afryka',
             link: '/left-sidebar',
           },
           {
-            name: 'Right Sidebar',
+            name: 'Ameryka Południowa',
             link: '/right-sidebar',
           },
           {
-            name: 'No Sidebar',
+            name: 'Ameryka Północna',
             link: '/no-sidebar',
+          },
+          {
+            name: 'Australia i Oceania',
+            link: '/no-sidebar',
+          },
+          {
+            name: 'Azja',
+            link: '/no-sidebar',
+          },
+          {
+            name: 'Europa',
+            link: '/europa',
           },
           {
             name: 'SubMenu',
@@ -52,11 +64,6 @@ module.exports = {
       {
         name: 'Elements',
         link: '/elements',
-      },
-      {
-        name: 'Sign Up',
-        link: '#',
-        cl: 'button primary',
       },
     ],
   },

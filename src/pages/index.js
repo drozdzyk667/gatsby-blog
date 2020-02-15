@@ -13,10 +13,10 @@ class Home extends React.Component {
     return (
       <Layout location="/">
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          title="Gatsby Starter - Landed"
+          htmlAttributes={{ lang: 'pl' }}
+          title="Podróże Przez Świat"
           meta={[
-            { name: 'description', content: 'Landed Gatsby Starter' },
+            { name: 'description', content: 'Podróże Przez Świat' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         ></Helmet>

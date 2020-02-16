@@ -260,7 +260,6 @@ a {
       'color #{_duration(transition)} ease-in-out'
     )
   );
-  border-bottom: dotted 1px;
   color: _palette(accent1);
   text-decoration: none;
 
@@ -1976,6 +1975,10 @@ body.is-touch {
     }
   }
 }
+
+// /*	#page-wrapper {
+//     @include vendor('transform', 'translateX(#{_size(navPanel)})');
+//   }*/
 
 body .navPanel-visible {
   /*	#page-wrapper {

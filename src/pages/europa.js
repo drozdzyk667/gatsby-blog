@@ -2,6 +2,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import '../assets/scss/europa.scss'
+import { Link } from 'gatsby'
 import Austria from '../images/europa/austria.jpg'
 import Bułgaria from '../images/europa/bułgaria.jpg'
 import Chorwacja from '../images/europa/chorwacja.jpg'
@@ -122,14 +123,12 @@ const RotateContainer = () => {
       {countriesData.map((item, index) => (
         <div key={index} className={'row-container'}>
           {item.countries.map((country, index) => (
-            <div
-              style={Styles().rotate}
-              key={index}
-              className={'singleContainer'}
-            >
-              <img src={country.url} alt={country.title} />
-              <h4 style={Styles().text}>{country.title}</h4>
-            </div>
+            <Link key={index} to={`/europa/${country.title.toLowerCase()}`}>
+              <div style={Styles().rotate} className={'singleContainer'}>
+                <img src={country.url} alt={country.title} />
+                <h4 style={Styles().text}>{country.title}</h4>
+              </div>
+            </Link>
           ))}
         </div>
       ))}

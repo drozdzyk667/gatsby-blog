@@ -2,7 +2,6 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import '../assets/scss/main.scss'
 import Header from './Header'
-import Footer from './Footer'
 
 const Layout = ({ children, ...props }) => {
   const [isActive, setIsActive] = React.useState(true)
@@ -29,10 +28,6 @@ const Layout = ({ children, ...props }) => {
                 items {
                   link
                   name
-                  items {
-                    link
-                    name
-                  }
                 }
               }
             }

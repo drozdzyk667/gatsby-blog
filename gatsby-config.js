@@ -10,7 +10,11 @@ module.exports = {
         link: '/',
       },
       {
-        name: 'Layouts',
+        name: 'O mnie',
+        link: '/no-sidebar',
+      },
+      {
+        name: 'Gdzie byłam',
         link: '#',
         items: [
           {
@@ -37,32 +41,18 @@ module.exports = {
             name: 'Europa',
             link: '/europa',
           },
-          {
-            name: 'SubMenu',
-            link: '#',
-            items: [
-              {
-                name: 'Option 1',
-                link: '#',
-              },
-              {
-                name: 'Option 2',
-                link: '#',
-              },
-              {
-                name: 'Option 3',
-                link: '#',
-              },
-              {
-                name: 'Option 4',
-                link: '#',
-              },
-            ],
-          },
         ],
       },
       {
-        name: 'Elements',
+        name: 'Polecane Hotele',
+        link: '/no-sidebar',
+      },
+      {
+        name: 'Mapa podróży',
+        link: '/elements',
+      },
+      {
+        name: 'Współpraca',
         link: '/elements',
       },
     ],

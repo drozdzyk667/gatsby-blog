@@ -4,27 +4,10 @@ import ReactCompareImage from 'react-compare-image'
 import Austria from '../images/europa/austria.jpg'
 import Bułgaria from '../images/europa/bułgaria.jpg'
 import InstagramEmbed from 'react-instagram-embed'
-// import ParticlesBg from 'particles-bg'
-// import Icon from './heart_icon'
 
 const One = () => {
-  // const config = {
-  //   num: [2, 4],
-  //   rps: 0.9,
-  //   radius: [30, 70],
-  //   life: [1.5, 3],
-  //   v: [2, 3],
-  //   tha: [-50, 50],
-  //   alpha: [0.6, 0],
-  //   scale: [0.4, 0.9],
-  //   body: Icon,
-  //   position: 'all',
-  //   cross: 'dead',
-  //   random: 10,
-  // }
   return (
     <section id="one" className="spotlight compare-container">
-      {/* <ParticlesBg type="custom" config={config} bg={true} /> */}
       <div className={'compare-inner'}>
         <div className="compare-img">
           <div className="compare-img-container">

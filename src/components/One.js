@@ -4,7 +4,7 @@ import ReactCompareImage from 'react-compare-image'
 import LeftImg from '../images/left-compare.jpg'
 import RightImg from '../images/right-compare.jpg'
 import InstagramEmbed from 'react-instagram-embed'
-import Fade from 'react-reveal/Fade'
+import { Fade, Zoom } from 'react-reveal'
 import Postcard from '../images/postcard.png'
 import Envelope from '../images/envelope.jpg'
 
@@ -12,46 +12,56 @@ const One = () => {
   return (
     <section id="one" className="spotlight compare-container">
       <div className={'compare-outter'}>
-        <h1>{'POZNAJMY SIĘ'}</h1>
+        <Zoom top cascade duration={1400}>
+          <h1>{'POZNAJMY SIĘ'}</h1>
+        </Zoom>
         <div className={'compare-inner'}>
-          <div className="compare-img">
-            <div className="compare-img-container">
-              <img className="postcard-container" src={Postcard} />
-              <img className="envelope-container" src={Envelope} />
-              <ReactCompareImage
-                aspectRatio={'wider'}
-                leftImage={LeftImg}
-                rightImage={RightImg}
-              />
-            </div>
-            <Fade left>
-              <div className="compare-img-text">
-                <div className="compare-img-text-inner">
-                  <h4>Hello World</h4>
-                  <p>
-                    Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus
-                    tortor enim mi mi nisi praesent adipiscing. Integer mi sed
-                    nascetur cep.
-                  </p>
-                </div>
+          <Fade left delay={1200} duration={1200}>
+            <div className="compare-img">
+              <div className="compare-img-container">
+                <img className="postcard-container" src={Postcard} />
+                <img className="envelope-container" src={Envelope} />
+                <ReactCompareImage
+                  aspectRatio={'wider'}
+                  leftImage={LeftImg}
+                  rightImage={RightImg}
+                />
               </div>
-            </Fade>
-          </div>
-          <div className="instagram-container">
-            <h5>{'Jestem na Instagramie'}</h5>
-            <InstagramEmbed
-              url="https://www.instagram.com/p/B8mIeKLHK2G/"
-              maxWidth={500}
-              hideCaption={true}
-              containerTagName="div"
-              protocol=""
-              injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-            />
-          </div>
+              <Fade bottom delay={1500}>
+                <div className="compare-img-text">
+                  <div className="compare-img-text-inner">
+                    <h4>Hello World</h4>
+                    <p>
+                      Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus
+                      tortor enim mi mi nisi praesent adipiscing. Integer mi sed
+                      nascetur cep.
+                    </p>
+                  </div>
+                </div>
+              </Fade>
+            </div>
+          </Fade>
+          <Fade right delay={2000} duration={1500}>
+            <div className="instagram-container">
+              <Zoom top cascade delay={2200}>
+                <h5>{'Jestem na Instagramie'}</h5>
+              </Zoom>
+              <div className="insta">
+                <InstagramEmbed
+                  url="https://www.instagram.com/p/B8mIeKLHK2G/"
+                  maxWidth={500}
+                  hideCaption={true}
+                  containerTagName="div"
+                  protocol=""
+                  injectScript
+                  onLoading={() => {}}
+                  onSuccess={() => {}}
+                  onAfterRender={() => {}}
+                  onFailure={() => {}}
+                />
+              </div>
+            </div>
+          </Fade>
         </div>
       </div>
       <ScrollLink

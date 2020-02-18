@@ -7,6 +7,7 @@ import Two from '../components/Two'
 import Three from '../components/Three'
 import Four from '../components/Four'
 import Five from '../components/Five'
+import Articles from '../components/Articles'
 
 class Home extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class Home extends React.Component {
         ></Helmet>
         <Banner />
         <One />
+        <Articles />
         <Two />
         <Three />
         <Four />

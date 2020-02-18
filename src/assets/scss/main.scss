@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import url('../css/fontawesome-all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap');
 
 /*
 	Landed by HTML5 UP
@@ -1284,6 +1285,37 @@ input[type='button'],
 
 /* Goto Next */
 
+.goto-first {
+  display: block;
+  left: 85%;
+  top: 75%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+  background-image: url('../css/images/tap_here.png');
+  animation: bumping-tap-here infinite forwards linear;
+  animation-duration: 2s;
+}
+
+@keyframes bumping-tap-here {
+  0%,
+  33% {
+    transform: scale(1);
+  }
+  34%,
+  67% {
+    transform: scale(1.1);
+  }
+  67%,
+  100% {
+    transform: scale(1);
+  }
+}
+
 .goto-next {
   border: 0;
   bottom: 0;
@@ -1300,6 +1332,7 @@ input[type='button'],
   cursor: pointer;
 
   &:before {
+    transition: 0.3s;
     background-image: url('../css/images/arrow.svg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1314,6 +1347,52 @@ input[type='button'],
     width: 2em;
     z-index: 1;
   }
+
+  &:hover:before {
+    transform: scale(1.2);
+  }
+}
+
+/* compare-img */
+
+.compare-container {
+  height: 100vh;
+  overflow: hidden;
+  padding: 5em;
+  background-color: rgb(0, 97, 187);
+
+  .compare-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .compare-img {
+      width: 35%;
+      position: relative;
+
+      .compare-img-container {
+        box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+      }
+
+      .compare-img-text {
+        color: black;
+        width: 250px;
+        box-shadow: inset 0 0 10px 5px rgb(0, 0, 0);
+        background-color: blanchedalmond;
+        text-align: center;
+        padding: 2em;
+        font-size: 16px;
+        position: absolute;
+        left: 80%;
+        top: 50%;
+
+        h4 {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 /* Spotlight */
@@ -1327,22 +1406,65 @@ input[type='button'],
   overflow: hidden;
   position: relative;
 
+  .card-header {
+    margin: 3.5em;
+    h1 {
+      font-size: 55px;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .article {
+      width: 350px;
+      height: 500px;
+      margin: 2.5em;
+      box-shadow: 2px 2px 15px 5px white;
+      &:nth-child(1) {
+        transform: perspective(600px) rotateY(-15deg);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      &:nth-child(1):hover,
+      &:nth-child(2):hover,
+      &:nth-child(3):hover {
+        transform: perspective(0px) rotateY(0deg) scale(1.15);
+      }
+      &:nth-child(2) {
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+      &:nth-child(3) {
+        transform: perspective(600px) rotateY(15deg);
+        transition: 0.5s;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .article-content {
+        text-align: center;
+        h5 {
+          padding: 1em;
+        }
+        p {
+          padding: 0.5em;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
   // Force spotlights to stack in reverse order (needed for our box
   // shadows to overlap stuff in the right direction).
   @for $i from 1 through _misc(max-spotlight) {
     &:nth-last-of-type(#{$i}) {
       z-index: #{$i};
     }
-  }
-
-  &:before {
-    background-image: url('../css/images/overlay.png');
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
   }
 
   .image.main {
@@ -1755,6 +1877,33 @@ body .landing {
       .slide {
         img {
           max-height: 100vh;
+        }
+        .legend {
+          position: absolute;
+          width: 100%;
+          top: 15%;
+          left: 30%;
+          background-color: transparent;
+          font-size: 5vw;
+          font-family: 'Amatic SC', cursive;
+        }
+
+        @media screen and (max-width: 1280px) {
+          .legend {
+            font-size: 6vw;
+          }
+        }
+
+        @media screen and (max-width: 736px) {
+          .legend {
+            font-size: 7vw;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          .legend {
+            font-size: 8vw;
+          }
         }
       }
     }

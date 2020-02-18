@@ -81,6 +81,7 @@ const MobileMenu = props => {
       {props.menuLinks.map(link =>
         link.items ? (
           <Select
+            key={link.name}
             styles={customStyles}
             placeholder={link.name}
             value={null}

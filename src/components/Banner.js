@@ -21,29 +21,27 @@ const Banner = () => {
         >
           <div className="carousel">
             <img src={Carousel_1} />
-            <p className="legend">Legend 1</p>
+            <h1 className="legend">Czy zaplanowałeś już swój wyjazd?</h1>
           </div>
           <div className="carousel">
             <img src={Carousel_2} />
-            <p className="legend">Legend 2</p>
+            <h1 className="legend">Zainspiruj się</h1>
           </div>
           <div className="carousel">
             <img src={Carousel_3} />
-            <p className="legend">Legend 3</p>
+            <h1 className="legend">Spełniaj marzenia</h1>
           </div>
         </Carousel>
       </div>
       <ScrollLink
         to="one"
-        className="goto-next"
+        className="goto-first"
         activeClass="active"
         smooth={true}
         offset={0}
         duration={1500}
         spy={true}
-      >
-        {'Next'}
-      </ScrollLink>
+      />
     </section>
   )
 }

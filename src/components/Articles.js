@@ -7,32 +7,32 @@ import Carousel_3 from '../images/carousel_3.jpg'
 const Articles = () => {
   return (
     <section id="articles" className="spotlight">
-      <div class="card-header">
+      <div className="card-header">
         <h1>Najnowsze Artykuły</h1>
       </div>
 
-      <div class="card-container">
-        <div class="article">
+      <div className="card-container">
+        <div className="article">
           <img src={Carousel_1} alt="article_1" />
-          <div class="article-content">
+          <div className="article-content">
             <h5>Austria</h5>
             <p>
               Moja przygoda z podróżowaniem rozpoczęła się gdy miałam 4 lata.
             </p>
           </div>
         </div>
-        <div class="article">
+        <div className="article">
           <img src={Carousel_2} alt="article_2" />
-          <div class="article-content">
+          <div className="article-content">
             <h5>Bułgaria</h5>
             <p>
               Moja przygoda z podróżowaniem rozpoczęła się gdy miałam 4 lata.
             </p>
           </div>
         </div>
-        <div class="article">
+        <div className="article">
           <img src={Carousel_3} alt="article_3" />
-          <div class="article-content">
+          <div className="article-content">
             <h5>Chorwacja</h5>
             <p>
               Moja przygoda z podróżowaniem rozpoczęła się gdy miałam 4 lata.

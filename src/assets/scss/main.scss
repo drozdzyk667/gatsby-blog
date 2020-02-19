@@ -1359,7 +1359,6 @@ input[type='button'],
 .compare-container {
   height: 100vh;
   overflow: hidden;
-  // background-color: rgba(170, 57, 57, 0.219);
   padding: 3em 5em 3em 5em;
   background-image: url('../images/blog_background.png');
 
@@ -2059,6 +2058,12 @@ body.is-touch {
       }
     }
   }
+}
+
+.counter {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: rgb(233, 218, 7);
 }
 
 /* XLarge */

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Vasilis Gakis",
   "dependencies": {
+    "@material-ui/core": "^4.9.3",
     "@types/node": "^13.7.1",
     "@types/react-dom": "^16.9.5",
     "gatsby": "^2.18.1",

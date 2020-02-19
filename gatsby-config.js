@@ -11,7 +11,7 @@ module.exports = {
       },
       {
         name: 'O mnie',
-        link: '/no-sidebar',
+        link: '/omnie',
       },
       {
         name: 'Gdzie byłam',

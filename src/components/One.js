@@ -7,6 +7,8 @@ import InstagramEmbed from 'react-instagram-embed'
 import { Fade, Zoom } from 'react-reveal'
 import Postcard from '../images/postcard.png'
 import Envelope from '../images/envelope.jpg'
+import { Button } from '@material-ui/core'
+import { Link } from 'gatsby'
 
 const One = () => {
   return (
@@ -30,12 +32,15 @@ const One = () => {
               <Fade bottom delay={1500}>
                 <div className="compare-img-text">
                   <div className="compare-img-text-inner">
-                    <h4>Hello World</h4>
+                    <h3>Cześć !</h3>
                     <p>
-                      Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus
-                      tortor enim mi mi nisi praesent adipiscing. Integer mi sed
-                      nascetur cep.
+                      {'Mam na imię Kasia i zapraszam na mój blog podróżniczy.'.toUpperCase()}
                     </p>
+                    <Link to={'/omnie'}>
+                      <Button color="secondary" variant="contained">
+                        {'O MNIE'}
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </Fade>

@@ -103,22 +103,20 @@ const SingleIconElement = ({
 
 const Statistics = ({ isVisible }) => {
   return (
-    <Fade up>
-      <section id="Statistics">
-        {tilesData.map(tile => (
-          <SingleIconElement
-            key={tile.alt}
-            isVisible={isVisible}
-            alt={tile.alt}
-            icon={tile.icon}
-            textBottom={tile.textBottom}
-            textTop={tile.textTop}
-            header={tile.header}
-            value={tile.value}
-          />
-        ))}
-      </section>
-    </Fade>
+    <section id="Statistics">
+      {tilesData.map(tile => (
+        <SingleIconElement
+          key={tile.alt}
+          isVisible={isVisible}
+          alt={tile.alt}
+          icon={tile.icon}
+          textBottom={tile.textBottom}
+          textTop={tile.textTop}
+          header={tile.header}
+          value={tile.value}
+        />
+      ))}
+    </section>
   )
 }
 

@@ -421,7 +421,7 @@ body .navPanel-visible {
   z-index: 1;
   width: 95vw;
   border-radius: 10px;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Top Articles */
@@ -471,8 +471,8 @@ body .navPanel-visible {
   background-color: rgb(228, 228, 228);
   box-shadow: 0 0 15px 2px black;
   width: 60vw;
+  margin: 10vw auto 5vw auto !important;
   flex-wrap: wrap;
-  margin: auto auto;
 
   .stats-single {
     display: flex;

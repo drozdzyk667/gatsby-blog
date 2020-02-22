@@ -104,31 +104,29 @@ const Banner = () => {
   }
   return (
     <section id="banner">
-      <Fade>
-        <img src={BG} />
-        <div className={classes.root}>
-          <div className={classes.exampleWrapper}>
-            <SpeedDial
-              ariaLabel="SpeedDial example"
-              className={classes.speedDial}
-              icon={<SpeedDialIcon />}
-              onClose={handleClose}
-              onOpen={handleOpen}
-              open={open}
-              direction={'down'}
-            >
-              {actions.map(action => (
-                <SpeedDialAction
-                  key={action.name}
-                  icon={action.icon}
-                  tooltipTitle={<Typography>{action.name}</Typography>}
-                  onClick={handleClose}
-                />
-              ))}
-            </SpeedDial>
-          </div>
+      <img src={BG} />
+      <div className={classes.root}>
+        <div className={classes.exampleWrapper}>
+          <SpeedDial
+            ariaLabel="SpeedDial example"
+            className={classes.speedDial}
+            icon={<SpeedDialIcon />}
+            onClose={handleClose}
+            onOpen={handleOpen}
+            open={open}
+            direction={'down'}
+          >
+            {actions.map(action => (
+              <SpeedDialAction
+                key={action.name}
+                icon={action.icon}
+                tooltipTitle={<Typography>{action.name}</Typography>}
+                onClick={handleClose}
+              />
+            ))}
+          </SpeedDial>
         </div>
-      </Fade>
+      </div>
       <ScrollLink
         to="articles"
         className="goto-next"

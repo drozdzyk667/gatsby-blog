@@ -23,8 +23,8 @@ const Home = () => {
       <Banner />
       <Content>
         <TopArticles />
-        <Divider />
-        <TrackVisibility once offset={600}>
+        <Divider variant={'middle'} />
+        <TrackVisibility once>
           {({ isVisible }) => <Statistics isVisible={isVisible} />}
         </TrackVisibility>
         <Divider />

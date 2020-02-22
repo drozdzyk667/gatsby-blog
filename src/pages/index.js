@@ -2,13 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-import One from '../components/One'
-import Two from '../components/Two'
-import Three from '../components/Three'
-import Four from '../components/Four'
-import Five from '../components/Five'
-import Articles from '../components/Articles'
 import TrackVisibility from 'react-on-screen'
+import Content from '../components/Content'
+import TopArticles from '../components/TopArticles'
+import Statistics from '../components/Statistics'
+import Articles from '../components/Articles'
+import { Divider } from '@material-ui/core'
 
 const Home = () => {
   return (
@@ -22,14 +21,15 @@ const Home = () => {
         ]}
       ></Helmet>
       <Banner />
-      <One />
-      <Articles />
-      <Two />
-      <Three />
-      <TrackVisibility once offset={600}>
-        {({ isVisible }) => <Four isVisible={isVisible} />}
-      </TrackVisibility>
-      <Five />
+      <Content>
+        <TopArticles />
+        <Divider />
+        <TrackVisibility once offset={600}>
+          {({ isVisible }) => <Statistics isVisible={isVisible} />}
+        </TrackVisibility>
+        <Divider />
+        <Articles />
+      </Content>
     </Layout>
   )
 }

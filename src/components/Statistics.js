@@ -87,7 +87,7 @@ const SingleIconElement = ({
   value,
 }) => {
   return (
-    <section>
+    <div className="stats-single">
       <span className="icon">
         <img src={icon} alt={alt} />
       </span>
@@ -97,14 +97,14 @@ const SingleIconElement = ({
         <TriggerNumbers isVisible={isVisible} value={value} />
         <span>{textBottom}</span>
       </p>
-    </section>
+    </div>
   )
 }
 
-const Four = ({ isVisible }) => {
+const Statistics = ({ isVisible }) => {
   return (
     <Fade up>
-      <div id="four">
+      <section id="Statistics">
         {tilesData.map(tile => (
           <SingleIconElement
             key={tile.alt}
@@ -117,9 +117,9 @@ const Four = ({ isVisible }) => {
             value={tile.value}
           />
         ))}
-      </div>
+      </section>
     </Fade>
   )
 }
 
-export default Four
+export default Statistics

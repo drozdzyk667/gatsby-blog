@@ -2,9 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-import pic07 from '../assets/images/pic07.jpg'
-import pic06 from '../assets/images/pic06.jpg'
-
 const LeftSidebar = props => (
   <Layout>
     <Helmet>
@@ -24,9 +21,7 @@ const LeftSidebar = props => (
         <div className="row gtr-150">
           <div className="col-8 col-12-medium">
             <section id="content">
-              <a href="#" className="image fit">
-                <img src={pic06} alt="" />
-              </a>
+              <a href="#" className="image fit"></a>
               <h3>Dolore Amet Consequat</h3>
               <p>
                 Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod
@@ -84,9 +79,7 @@ const LeftSidebar = props => (
               </section>
               <hr />
               <section>
-                <a href="#" className="image fit">
-                  <img src={pic07} alt="" />
-                </a>
+                <a href="#" className="image fit"></a>
                 <h3>Amet Lorem Tempus</h3>
                 <p>
                   Sed tristique purus vitae volutpat commodo suscipit amet sed

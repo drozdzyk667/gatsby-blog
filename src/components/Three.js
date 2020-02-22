@@ -1,17 +1,10 @@
 import React from 'react'
-import pic04 from '../assets/images/pic04.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
 
 const Three = props => (
-  <section
-    id="three"
-    className="spotlight style3 left inactive"
-    style={{ backgroundImage: `url(${pic04})` }}
-  >
-    <span className="image fit main bottom">
-      <img src={pic04} alt="" />
-    </span>
+  <section id="three" className="spotlight style3 left inactive">
+    <span className="image fit main bottom"></span>
     <Fade left big>
       <div className="content">
         <header>

@@ -1,11 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-import pic07 from '../assets/images/pic07.jpg'
-import pic08 from '../assets/images/pic08.jpg'
 
 const Elements = props => (
   <Layout>
@@ -523,81 +518,10 @@ const Elements = props => (
         <section>
           <h3>Image</h3>
           <h4>Fit</h4>
-          <div className="box alt">
-            <div className="row gtr-50 gtr-uniform">
-              <div className="col-12">
-                <span className="image fit">
-                  <img src={pic07} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic02} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic03} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic04} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic04} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic02} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic03} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic03} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic04} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic02} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic02} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic03} alt="" />
-                </span>
-              </div>
-              <div className="col-4 col-6-xsmall">
-                <span className="image fit">
-                  <img src={pic04} alt="" />
-                </span>
-              </div>
-            </div>
-          </div>
 
           <h4>Left &amp; Right</h4>
           <p>
-            <span className="image left">
-              <img src={pic08} alt="" />
-            </span>
+            <span className="image left"></span>
             Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
             sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
             faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
@@ -621,9 +545,7 @@ const Elements = props => (
             Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.
           </p>
           <p>
-            <span className="image right">
-              <img src={pic08} alt="" />
-            </span>
+            <span className="image right"></span>
             Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
             sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
             faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac

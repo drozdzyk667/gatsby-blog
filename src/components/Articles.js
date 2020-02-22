@@ -19,11 +19,6 @@ const useStyles = makeStyles(() =>
       maxWidth: 345,
       margin: '3em',
       boxShadow: '2px 2px 15px 2px lightblue',
-      transition: '0.3s',
-      cursor: 'pointer',
-      '&:hover': {
-        transform: 'scale(1.05)',
-      },
     },
     media: {
       height: 0,
@@ -44,6 +39,14 @@ const useStyles = makeStyles(() =>
       flexDirection: 'row',
       justifyContent: 'center',
       margin: '2em',
+    },
+    likeButton: {
+      marginLeft: 'auto',
+      transition: '0.3s',
+      cursor: 'pointer',
+      '&:hover': {
+        transform: 'scale(1.3)',
+      },
     },
   })
 )
@@ -73,7 +76,7 @@ const SingleArticle = () => {
         <IconButton
           color="secondary"
           aria-label="add to favorites"
-          style={{ marginLeft: 'auto' }}
+          className={classes.likeButton}
         >
           <a href={'https://www.instagram.com/p/B81vkobHVHn/'} target="_blank">
             <FavoriteIcon />
